@@ -1,6 +1,6 @@
 <template>
     <div class="pagination">
-        <button @click="prevPage :disabled= "currentPage === 1">Anterior</button>
+        <button @click="prevPage" :disabled= "currentPage === 1">Anterior</button>
         <span>Página {{ currentPage }} de {{ totalPages }}</span>
         <button @click="nextPage" :disabled="currentPage === totalPages">Próximo</button>
     </div>
